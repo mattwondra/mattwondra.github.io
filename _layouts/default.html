@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>{% if page.title %}{{ page.title }} &middot; {% endif %}Matt Wondra</title>
+        <meta name="viewport" content="width=device-width">
+
+        <!-- syntax highlighting CSS -->
+        <link rel="stylesheet" href="/css/syntax.css">
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/css/main.css">
+
+    </head>
+    <body>
+
+        <div class="site">
+          <div class="header">
+            <img src="http://p-ec2.pixstatic.com/517abdaa74c5b66aef00088f._w.60_h.60_s.centercrop_.jpg" alt="" style="border-radius: 4px; margin-right: 6px" />
+            <h1 class="title">Matt Wondra <span style="display: block; font-weight: normal; color: #888;">lives in a rounded rectangle.</span></h1>
+          </div>
+
+          {{ content }}
+
+        </div>
+
+    </body>
+</html>
