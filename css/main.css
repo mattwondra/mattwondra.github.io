@@ -4,7 +4,7 @@
 
 html {
   height: 100%;
-  background-color: #fff;
+  background-color: #fcfffc;
   font-size: 100%;
 }
 body {
@@ -42,7 +42,7 @@ img {
 
 .handsome-mug {
   margin: 0 auto 0.5em;
-  border-radius: 0 0.25em;
+  border-radius: 0.25em;
 }
 .hey-its-me {
   display: block;
@@ -81,6 +81,7 @@ img {
   text-transform: uppercase;
 }
 
+.post-header { margin-bottom: 2em; }
 .post-byline {
   color: #999;
   text-transform: uppercase;
@@ -92,7 +93,7 @@ img {
   font-size: 2em;
 }
 
-.post-content, .page-content { text-align: left; }
+.post-content, .page-content { text-align: left; margin-bottom: 4em; }
 
 .post-teaser { margin-bottom: 1em; }
 .post-teaser a { display: block; }
