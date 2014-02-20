@@ -1,31 +1,69 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>{% if page.title %}{{ page.title }} &middot; {% endif %}Matt Wondra</title>
-        <meta name="viewport" content="width=device-width">
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>{% if page.title %}{{ page.title }} &middot; {% endif %}{{ site.title }}</title>
+  <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <!-- syntax highlighting CSS -->
-        <link rel="stylesheet" href="/css/syntax.css">
+  <link rel="stylesheet" href="/css/normalize.css">
+  <link rel="stylesheet" href="/css/syntax.css">
+  <link rel="stylesheet" href="/css/main.css">
 
-        <!-- Custom CSS -->
-        <link rel="stylesheet" href="/css/main.css">
-        
-        <script type="text/javascript" src="//use.typekit.net/phx4juf.js"></script>
-        <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-    </head>
-    <body class="tk-source-sans-pro">
+  <script type="text/javascript" src="//use.typekit.net/phx4juf.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+</head>
+<body class="tk-source-sans-pro">
 
-        <div class="site">
-          <div class="header">
-            <img src="http://p-ec2.pixstatic.com/517abdaa74c5b66aef00088f._w.60_h.60_s.centercrop_.jpg" alt="" style="border-radius: 4px; margin-right: 6px" />
-            <h1 class="title">Matt Wondra <span style="display: block; font-weight: normal; color: #888;">lives in a rounded rectangle.</span></h1>
-          </div>
+  <header role="banner" class="page-header page-section">
+    <img class="handsome-mug" src="http://p-ec2.pixstatic.com/517abdaa74c5b66aef00088f._w.60_h.60_s.centercrop_.jpg" alt="" />
+    <a class="hey-its-me" href="/about.html">Matt Wondra</a>
+    {% if page.goof %}{{page.goof}}{% else %}lives in a rounded rectangle.{% endif %}
+  </header>
 
-          {{ content }}
+  <main role="main">
+    {{ content }}
+  </main>
 
-        </div>
+  <footer role="contentinfo" class="page-footer">
+    {% if page.previous %}
+      <section class="page-section">
+        <h2 class="section-heading">Made&nbsp;it&nbsp;through? Well&nbsp;here’s&nbsp;another</h2>
+        {% assign post = page.previous %}
+        {% include posts/teaser.html %}
+      </section>
+    {% endif %}
+    
+    <section class="page-section">
+      <h2 class="section-heading">Follow along, ya&nbsp;creeper</h2>
+      Twitter Github Codepen? Dribbble? Instagram?
+    </section>
+    
+    <section class="page-section">
+      <h2 class="section-heading">Juicy links</h2>
+      <nav role="navigation">
+        <ul class="list-unstyled">
+          <li><a href="/archives.html">Archives</a></li>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/rss.xml">RSS</a></li>
+        </ul>
+      </nav>
+    </section>
+    
+    <small class="copyright-notice">
+      All content &copy; {{ site.time | date: '%Y' }} Matt Wondra
+    </small>
+  </footer>
+  
 
-    </body>
+  <script>
+    (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+    function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+    e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+    e.src='//www.google-analytics.com/analytics.js';
+    r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+    ga('create','UA-819108-8');ga('send','pageview');
+  </script>
+</body>
 </html>

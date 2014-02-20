@@ -1,3 +1,6 @@
-name: Your New Jekyll Site
+title: "Matt Wondra&rsquo;s Blog"
+description: "Thoughts on web development, design process, and remote work by Matt Wondra."
+
+permalink: /:year/:month/:title/
 markdown: redcarpet
 pygments: true

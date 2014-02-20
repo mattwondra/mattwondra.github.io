@@ -1,160 +1,101 @@
-/*****************************************************************************/
-/*
-/* Common
-/*
-/*****************************************************************************/
-
-/* Global Reset */
-* {
-  margin: 0;
-  padding: 0;
+*, *:before, *:after {
+  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
 }
 
-html, body { height: 100%; }
-
+html {
+  height: 100%;
+  background-color: #fff;
+  font-size: 100%;
+}
 body {
-  background-color: #FFF;
-  font: 13.34px Helvetica, Arial, sans-serif;
-  font-size: small;
+  font: 1em/1.5 Helvetica, Arial, sans-serif;
+  color: #4c4a48;
   text-align: center;
+  padding: 1.5em 0 3em;
+  width: 90%;
+  max-width: 40em;
+  margin: 0 auto;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-size: 100%; }
-
-h1 { margin-bottom: 1em; }
-p { margin: 1em 0; }
-
-a         { color: #00a; }
-a:hover   { color: #000; }
-a:visited { color: #a0a; }
-
-/*****************************************************************************/
-/*
-/* Home
-/*
-/*****************************************************************************/
-.posts {
-  list-style-type: none;
-  margin-bottom: 2em;
+  margin: 0;
+  font-size: 1em;
+  line-height: 1.25;
+  color: #1a1817;
 }
 
-.posts li {
-  line-height: 1.75em;
-}
+p { margin: 0 0 1em; }
 
-.posts span {
-  color: #aaa;
-  font-family: Monaco, "Courier New", monospace;
-  font-size: 80%;
-}
-
-/*****************************************************************************/
-/*
-/* Site
-/*
-/*****************************************************************************/
-
-.site {
-  font-size: 115%;
-  text-align: justify;
-  width: 42em;
-  margin: 3em auto 2em;
-  line-height: 1.5em;
-}
-
-.header a {
-  font-weight: bold;
+a, a:focus {
+  color: #ee6c15;
   text-decoration: none;
 }
+a:hover { color: #b84d06; }
 
-.title {
-  display: inline-block;
-  margin-bottom: 2em;
+
+img {
+  display: block;
+  max-width: 100%;
+  width: auto;
 }
 
-.title a {
-  color: #a00;
+
+.handsome-mug {
+  margin: 0 auto 0.5em;
+  border-radius: 0 0.25em;
+}
+.hey-its-me {
+  display: block;
+  font-weight: bold;
+  letter-spacing: 0.033em;
+  text-transform: uppercase;
 }
 
-.title a:hover {
-  color: #000;
+
+
+.list-unstyled {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.list-unstyled li { margin: 0; }
+
+
+.page-section:after {
+  content: '';
+  display: block;
+  width: 3em;
+  height: 2px;
+  background: #dee1e1;
+  margin: 2em auto;
 }
 
-.header a.extra {
-  color: #aaa;
-  margin-left: 1em;
+.section-heading {
+  display: block;
+  font-weight: bold;
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.25;
+  margin-bottom: 0.5em;
+  letter-spacing: 0.033em;
+  text-transform: uppercase;
 }
 
-.header a.extra:hover {
-  color: #000;
+.post-byline {
+  color: #999;
+  text-transform: uppercase;
+  font-size: 0.9em;
+  letter-spacing: 0.066em;
+}
+.post-title { display: block; }
+.post-full .post-title {
+  font-size: 2em;
 }
 
-.meta {
-  color: #aaa;
-}
+.post-content, .page-content { text-align: left; }
 
-.footer {
-  font-size: 80%;
-  color: #666;
-  border-top: 4px solid #eee;
-  margin-top: 2em;
-  overflow: hidden;
-}
-
-.footer .contact {
-  float: left;
-  margin-right: 3em;
-}
-
-.footer .contact a {
-  color: #8085C1;
-}
-
-.footer .rss {
-  margin-top: 1.1em;
-  margin-right: -.2em;
-  float: right;
-}
-
-.footer .rss img {
-  border: 0;
-}
-
-/*****************************************************************************/
-/*
-/* Posts
-/*
-/*****************************************************************************/
-
-/* standard */
-.post pre {
-  border: 1px solid #ddd;
-  background-color: #eef;
-  padding: 0 .4em;
-}
-
-.post ul, .post ol {
-  margin-left: 1.35em;
-}
-
-.post code {
-  border: 1px solid #ddd;
-  background-color: #eef;
-  padding: 0 .2em;
-}
-
-.post pre code {
-  border: none;
-}
-
-/* terminal */
-.post pre.terminal {
-  border: 1px solid #000;
-  background-color: #333;
-  color: #FFF;
-}
-
-.post pre.terminal code {
-  background-color: #333;
+.post-teaser { margin-bottom: 1em; }
+.post-teaser a { display: block; }
+.post-teaser .post-title {
+  font-size: 1.25em;
 }
