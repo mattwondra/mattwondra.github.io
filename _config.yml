@@ -1,6 +1,13 @@
-title: "Matt Wondra&rsquo;s Blog"
-description: "Thoughts on web development, design process, and remote work by Matt Wondra."
+name:         "Matt Wondra&rsquo;s Blog"
+url:          "http://mattwondra.com"
+description:  "Thoughts on web development, design process, and remote work by Matt Wondra."
+author:       "Matt Wondra"
 
 permalink: /:year/:month/:title/
 markdown: redcarpet
 pygments: true
+
+# Options for jekyll-rss plugin
+rss_path:       "/"
+rss_name:       "rss.xml"
+rss_post_limit: 10

@@ -4,9 +4,10 @@
   {% comment %}TODO: Favicon{% endcomment %}
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>{% if page.title %}{{ page.title }} &middot; {% endif %}{{ site.title }}</title>
+  <title>{% if page.title %}{{ page.title }} &middot; {% endif %}{{ site.name }}</title>
   <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="{{site.rss_path}}{{site.rss_name}}" rel="alternate" title="{{site.name}}" type="application/rss+xml" />
 
   <script src="/js/modernizr.js"></script>
 
@@ -56,7 +57,7 @@
         <ul class="list-unstyled">
           <li><a href="/archives.html">Archives</a></li>
           <li><a href="/about.html">About</a></li>
-          <li><a href="/rss.xml">RSS</a></li>
+          <li><a href="{{site.rss_path}}{{site.rss_name}}">RSS</a></li>
         </ul>
       </nav>
     </section>
