@@ -4,8 +4,9 @@
 
 html {
   height: 100%;
-  background-color: #fcfffc;
-  font-size: 100%;
+  background-color: #fffefc;
+  font-size: 87.5%;
+  -webkit-font-smoothing: antialiased;
 }
 body {
   font: 1em/1.5 Helvetica, Arial, sans-serif;
@@ -13,14 +14,14 @@ body {
   text-align: center;
   padding: 1.5em 0 3em;
   width: 90%;
-  max-width: 40em;
+  max-width: 60em;
   margin: 0 auto;
 }
 
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
-  font-size: 1em;
-  line-height: 1.25;
+  font-size: 1rem;
+  line-height: 1.15;
   color: #1a1817;
 }
 
@@ -49,6 +50,7 @@ img {
   font-weight: bold;
   letter-spacing: 0.033em;
   text-transform: uppercase;
+  line-height: 1.15em;
 }
 
 
@@ -73,30 +75,47 @@ img {
 .section-heading {
   display: block;
   font-weight: bold;
-  font-size: 16px;
   font-size: 1rem;
-  line-height: 1.25;
+  line-height: 1.15;
   margin-bottom: 0.5em;
   letter-spacing: 0.033em;
   text-transform: uppercase;
 }
 
-.post-header { margin-bottom: 2em; }
+.stalker-zone a {
+  margin: 0 0.1em;
+}
+
+.post-header { margin-bottom: 1.5em; }
 .post-byline {
   color: #999;
   text-transform: uppercase;
-  font-size: 0.9em;
+  font-size: 0.9rem;
   letter-spacing: 0.066em;
 }
-.post-title { display: block; }
+.post-title { display: block; line-height: 1.15; }
 .post-full .post-title {
-  font-size: 2em;
+  font-size: 2rem;
 }
 
-.post-content, .page-content { text-align: left; margin-bottom: 4em; }
+.post-content, .page-content {
+  max-width: 40em;
+  margin: 0 auto 4em;
+  text-align: left;
+}
 
 .post-teaser { margin-bottom: 1em; }
 .post-teaser a { display: block; }
 .post-teaser .post-title {
-  font-size: 1.25em;
+  font-size: 1.5rem;
+}
+
+
+@media screen and (min-width: 32em) {
+  html { font-size: 100%; }
+}
+
+@media screen and (min-width: 44em) {
+  .post-full .post-title { font-size: 2.5em; }
+  .post-content, .page-content { font-size: 1.125em; }
 }
