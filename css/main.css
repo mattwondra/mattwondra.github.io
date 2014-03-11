@@ -54,10 +54,10 @@ blockquote {
 }
 
 a, a:focus {
-  color: #ee6c15;
+  color: #ee5715;
   text-decoration: none;
 }
-a:hover { color: #b84d06; }
+a:hover { color: #ff781f; }
 
 
 img {
@@ -93,7 +93,7 @@ img {
   content: '';
   display: block;
   width: 3em;
-  height: 2px;
+  height: 3px;
   background: #dee1e1;
   margin: 3em auto;
 }
@@ -133,9 +133,14 @@ img {
 .post-teaser { margin-bottom: 1.5em; }
 .post-teaser a { display: block; }
 .post-teaser .post-title {
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
+
+#disqus_thread {
+  max-width: 40em;
+  margin: 0 auto 4em;
+}
 
 @media screen and (min-width: 32em) {
   html { font-size: 100%; }
