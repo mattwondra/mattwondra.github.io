@@ -33,7 +33,10 @@ h3 {
   letter-spacing: 0.05em;
 }
 
-p { margin: 0 0 1.5em; }
+p { margin: 0 0 1.5rem; }
+.standout {
+  font-size: 1.25em;
+}
 
 ol, ul {
   margin: 0 0 1.5em;
