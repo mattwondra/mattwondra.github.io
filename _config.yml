@@ -8,6 +8,6 @@ markdown: redcarpet
 pygments: true
 
 # Options for jekyll-rss plugin
-rss_path:       "/"
-rss_name:       "rss.xml"
-rss_post_limit: 10
+# rss_path:       "/"
+# rss_name:       "rss.xml"
+# rss_post_limit: 10
