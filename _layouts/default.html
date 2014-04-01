@@ -27,7 +27,7 @@
       <img class="handsome-mug" src="http://p-ec2.pixstatic.com/517abdaa74c5b66aef00088f._w.60_h.60_s.centercrop_.jpg" alt="" />
       Matt Wondra
     </a>
-    {% if page.status %}{{page.status}}{% else %}lives in a rounded rectangle.{% endif %}
+    {% if page.status %}{{page.status}}{% else %}lives in a rounded rectangle{% endif %}
   </header>
 
   <main role="main">
@@ -55,8 +55,8 @@
       <h2 class="section-heading">Juicy links</h2>
       <nav role="navigation">
         <ul class="list-unstyled">
-          <li><a href="/speaking.html">Speaking</a></li>
-          <li><a href="/archives.html">Archives</a></li>
+          <!-- <li><a href="/speaking.html">Speaking</a></li> -->
+          {% if site.posts.length > 3 %}<li><a href="/archives.html">Archives</a></li>{% endif %}
           <li><a href="/about.html">About</a></li>
           <li><a href="{{site.rss_path}}{{site.rss_name}}">RSS</a></li>
         </ul>

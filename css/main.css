@@ -136,6 +136,10 @@ img {
   font-size: 2rem;
 }
 
+.speaking-list {
+  text-align: center;
+}
+
 
 #disqus_thread {
   max-width: 40em;

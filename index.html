@@ -1,14 +1,28 @@
 ---
 layout: default
 ---
+{% if site.posts.length %}
+  <section class="page-section">
+    <h1 class="section-heading">Latest posts</h1>
+    <ul class="list-unstyled post-teaser-list">
+      {% for post in site.posts limit:3 %}
+        <li>
+          {% include posts/teaser.html %}
+        </li>
+      {% endfor %}
+    </ul>
+  </section>
+{% endif %}
 
 <section class="page-section">
-  <h1 class="section-heading">Latest posts</h1>
-  <ul class="list-unstyled post-teaser-list">
-    {% for post in site.posts limit:3 %}
-      <li>
-        {% include posts/teaser.html %}
-      </li>
-    {% endfor %}
-  </ul>
+  <h1 class="section-heading">Speaking soon</h1>
+
+  <div class="page-content speaking-list">
+    <h2>Making a Big Impact with a Small Web Team</h2>
+    <p>
+      April 2, 2014 — Champaign, IL (live stream available)
+      <br />
+      <a href="http://illinois.edu/calendar/detail/4835?eventId=31732813&calMin=201303&cal=20140311&skinId=4897">Details</a>
+    </p>
+  </div>
 </section>

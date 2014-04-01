@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Hello, world."
-status: "finally has a fancy-pants blog."
+status: "finally has a fancy-pants blog"
 comments: true
 ---
 
