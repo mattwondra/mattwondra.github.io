@@ -2,35 +2,27 @@
 <html lang="en">
 <head>
   {% comment %}TODO: Favicon{% endcomment %}
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>{% if page.title %}{{ page.title }} &middot; {% endif %}{{ site.name }}</title>
-  <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link href="{{site.rss_path}}{{site.rss_name}}" rel="alternate" title="{{site.name}}" type="application/rss+xml" />
 
-  <script src="/js/modernizr.js"></script>
+  <link rel="stylesheet" href="/assets/css/ooh_how_stylish.css" />
 
-  {% comment %}TODO: Combine and minify{% endcomment %}
-  <link rel="stylesheet" href="/css/normalize.css">
-  <link rel="stylesheet" href="/css/syntax.css">
-  <link rel="stylesheet" href="/css/webicons.css">
-  <link rel="stylesheet" href="/css/main.css">
-
-  <script type="text/javascript" src="//use.typekit.net/phx4juf.js"></script>
-  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+  <script src="//use.typekit.net/jfv2xps.js"></script>
+  <script>try{Typekit.load();}catch(e){}</script>
 </head>
-<body class="tk-source-sans-pro">
+<body>
 
-  <header role="banner" class="page-header page-section">
-    <a class="hey-its-me" href="/">
-      <img class="handsome-mug" src="http://p-ec2.pixstatic.com/517abdaa74c5b66aef00088f._w.60_h.60_s.centercrop_.jpg" alt="" />
-      Matt Wondra
+  <header role="banner" class="u-responsive-wrapper">
+    <a href="/">
+      Matt Wondra {% if page.status %}{{page.status}}{% else %}lives in a rounded rectangle{% endif %}
     </a>
-    {% if page.status %}{{page.status}}{% else %}lives in a rounded rectangle{% endif %}
   </header>
 
-  <main role="main">
+  <main class="u-responsive-wrapper" role="main">
     {{ content }}
   </main>
 

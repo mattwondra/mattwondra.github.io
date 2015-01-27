@@ -3,9 +3,14 @@ url:          "http://mattwondra.com"
 description:  "Thoughts on web development, design process, and remote work by Matt Wondra."
 author:       "Matt Wondra"
 
-permalink: /:year/:month/:title/
+permalink: /:year/:title/
+
+
+
+highlighter: pygments
 markdown: redcarpet
-pygments: true
+sass:
+  sass_dir: assets/_sass
 
 # Options for jekyll-rss plugin
 # rss_path:       "/"

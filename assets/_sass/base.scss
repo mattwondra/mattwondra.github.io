@@ -1,0 +1,59 @@
+html {
+  font-size: 50%;
+  @media (min-width: 40em) {
+    font-size: 62.5%;
+  }
+}
+
+body {
+  font: #{$fontSizeNormal}/1.4 "interface", "Helvetica Neue", Arial, Helvetica, sans-serif;
+  color: #444;
+  font-weight: $fontWeightNormal;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: $fontSizeNormal;
+  font-weight: $fontWeightNormal;
+  margin: 0;
+}
+
+a {
+  color: $colorBrand;
+}
+
+
+
+.Post__header {
+  margin-bottom: 7rem;
+  &:after {
+    content: '';
+    display: block;
+    width: 4rem;
+    height: 1px;
+    background: $colorMuted;
+    position:relative;
+    top: 2rem;
+  }
+}
+
+.Post__title {
+  @include largeHeading;
+  margin-bottom: 3rem;
+  color: #222;
+}
+
+.Post__byline {
+  @include uppercase;
+  color: $colorMuted;
+  font-size:$fontSizeSmall;
+}
+
+.Post__content {
+  p {
+    margin: 0 0 1.25em;
+  }
+}
+
+.standout {
+  font-size: $fontSizeLarge;
+}

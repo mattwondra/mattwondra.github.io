@@ -1,0 +1,17 @@
+[role="banner"] {
+  line-height: 1.2;
+  margin-bottom: 7rem;
+  &:before {
+    content: '';
+    display: block;
+    height: 0.4rem;
+    background: $colorBrand;
+    margin-bottom: 0.6rem;
+  }
+  a {
+    @include uppercase;
+    text-decoration: none;
+    font-weight: $fontWeightBold;
+    font-size: $fontSizeSmall;
+  }
+}

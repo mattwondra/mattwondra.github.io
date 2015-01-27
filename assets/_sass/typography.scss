@@ -1,0 +1,10 @@
+@mixin uppercase {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+@mixin largeHeading {
+  font-size: $fontSizeLargest;
+  font-weight: $fontWeightBold;
+  line-height: 1.1;
+}

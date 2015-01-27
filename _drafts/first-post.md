@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Hello, world."
+title:  "Hello, world. It's nice to meet you."
 status: "finally has a fancy-pants blog"
-comments: true
+comments: false
 ---
 
 <p class="standout">Early in my career I knew that I wanted to write. Like many young developers, I followed my web heroes’ blogs as they wrote tutorials, code snippets, and web philosophy.</p>
