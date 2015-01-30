@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Hello, world. It's nice to meet you."
-status: "finally has a fancy-pants blog"
+title:  Hello, world. Nice to meet you.
+mattwondra: has a fancy-pants blog. About dang time.
 comments: false
 ---
 
@@ -11,4 +11,4 @@ comments: false
 
 And now our world is flush with tutorials, code snippets, design theory, best practices, experimental techniques... And nearly all of it completely free of cost. How many of us grew up in the profession primarily through blog posts, conference videos, and podcasts? I sure did.
 
-**The greatest accomplishment of the web development community is its endless imperative to share.** And for years I’ve silently(tk) enjoyed the benefits. But now I'm ready to jump in and contribute. I want to give back to the community that's given so much to me.
+**The greatest accomplishment of the web development community is its endless imperative to share.** And for years I’ve quietly(tk) enjoyed the benefits. But now I'm ready to jump in and contribute. I want to give back to the community that's given so much to me.
