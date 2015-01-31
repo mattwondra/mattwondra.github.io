@@ -17,9 +17,35 @@
 <body>
 
   <header role="banner" class="u-responsive-wrapper">
-    <a href="/">
-      Matt Wondra {% if page.mattwondra %}{{page.mattwondra}}{% else %}lives in a rounded rectangle{% endif %}
-    </a>
+    {% if page.url != "/index.html" %}
+      {% assign isLink = true %}
+    {% endif %}
+    
+    {% capture flavorText %}
+      <div class="FlavorText__text">
+        Matt Wondra
+        <span class="FlavorText__text__flavor">
+          {% if page.mattwondra %}{{ page.mattwondra }}{% else %}{{ site.defaultFlavorText }}{% endif %}
+        </span>
+        
+        {% if isLink %}
+          <div class="FlavorText__hover-text">
+            <span class="FlavorText__hover-text__name">Matt Wondra</span>
+            will guide you home.
+          </div>
+        {% endif %}
+      </div>
+    {% endcapture %}
+    
+    {% if isLink %}
+      <a href="/" class="FlavorText FlavorText--link">
+        {{ flavorText }}
+      </a>
+    {% else %}
+      <div class="FlavorText">
+        {{ flavorText }}
+      </div>
+    {% endif %}
   </header>
 
   <main class="u-responsive-wrapper" role="main">

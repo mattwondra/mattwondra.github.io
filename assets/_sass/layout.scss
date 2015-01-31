@@ -1,17 +1,58 @@
 [role="banner"] {
-  line-height: 1.2;
   margin-bottom: 7rem;
-  &:before {
-    content: '';
-    display: block;
-    height: 0.4rem;
-    background: $colorBrand;
-    margin-bottom: 0.6rem;
-  }
-  a {
-    @include uppercase;
-    text-decoration: none;
-    font-weight: $fontWeightBold;
-    font-size: $fontSizeSmall;
+
+}
+
+.FlavorText {
+  @include uppercase;
+  color: $colorBrand;
+  font-weight: $fontWeightBold;
+  font-size: $fontSizeSmall;
+  line-height: 1.2;
+  display: block;
+  border-top: 0.4rem solid;
+  padding-top: 0.6rem;
+}
+
+.FlavorText__text {
+  position: relative;
+  top: 0;
+  transition: top 100ms;
+}
+
+.FlavorText__text__flavor {
+  position: relative;
+  top: 0;
+  opacity: 1;
+  transition: opacity 100ms, top 100ms;
+}
+
+.FlavorText__hover-text {
+  position: absolute;
+  top: -1em;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 100ms, top 100ms;
+}
+.FlavorText__hover-text__name { opacity: 0; }
+
+.FlavorText--link {
+  position: relative;
+  &:hover {
+    .FlavorText__text {
+      top: 0.5em;
+    }
+    .FlavorText__flavor {
+      top: 1em;
+    }
+    .FlavorText__text__flavor {
+      top: 1em;
+      opacity: 0;
+    }
+    .FlavorText__hover-text {
+      top: 0;
+      opacity: 1;
+    }
   }
 }

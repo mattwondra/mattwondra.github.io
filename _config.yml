@@ -3,6 +3,8 @@ url:          "http://mattwondra.com"
 description:  "Thoughts on web development, design process, and remote work by Matt Wondra."
 author:       "Matt Wondra"
 
+defaultFlavorText: forgot to add flavor text to this page.
+
 permalink: /:year/:title/
 
 
