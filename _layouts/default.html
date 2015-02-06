@@ -52,37 +52,25 @@
     {{ content }}
   </main>
 
-  <footer role="contentinfo" class="page-footer">
-    {% if page.previous %}
-      <section class="page-section">
-        <h2 class="section-heading">Made&nbsp;it&nbsp;through? Well&nbsp;here’s&nbsp;another</h2>
-        {% assign post = page.previous %}
-        {% include posts/teaser.html %}
-      </section>
-    {% endif %}
+  <footer role="contentinfo" class="SiteFooter u-responsive-wrapper">
+    <hr class="ContentBreak" />
     
-    <section class="page-section stalker-zone">
-      <h2 class="section-heading">Follow along, ya&nbsp;creeper</h2>
-      <a href="https://twitter.com/mattwondra" class="webicon twitter">Follow me on Twitter</a>
-      <a href="https://github.com/mattwondra" class="webicon github">Follow me on Github</a>
-      <a href="http://dribbble.com/mattwondra" class="webicon dribbble">Follow me on Dribbble</a>
-      <a href="http://instagram.com/mattwondra" class="webicon instagram">Follow me on Instagram</a>
-    </section>
+    <h2 class="u-section-heading">Choose your own adventure</h2>
+    <nav class="PrimaryNav">
+      <a href="/">Home</a>
+      <a href="/about/">About</a>
+      <a href="/blog/archive/">Archive</a>
+    </nav>
+    <div class="SecondaryNav">
+      <a href="https://github.com/mattwondra" class="u-link-muted">Github</a>
+      <a href="https://twitter.com/mattwondra" class="u-link-muted">Twitter</a>
+      <a href="http://instagram.com/mattwondra" class="u-link-muted">Instagram</a>
+      <a href="{{site.rss_path}}{{site.rss_name}}" class="u-link-muted">RSS</a>
+    </div>
     
-    <section class="page-section">
-      <h2 class="section-heading">Juicy links</h2>
-      <nav role="navigation">
-        <ul class="list-unstyled">
-          <!-- <li><a href="/speaking.html">Speaking</a></li> -->
-          {% if site.posts.length > 3 %}<li><a href="/archives.html">Archives</a></li>{% endif %}
-          <li><a href="/about.html">About</a></li>
-          <li><a href="{{site.rss_path}}{{site.rss_name}}">RSS</a></li>
-        </ul>
-      </nav>
-    </section>
     
-    <small class="copyright-notice">
-      All content &copy; {{ site.time | date: '%Y' }} Matt Wondra
+    <small class="SiteCopyright">
+      &copy; {{ site.time | date: '%Y' }} Matt Wondra
     </small>
   </footer>
   

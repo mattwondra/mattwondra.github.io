@@ -17,14 +17,14 @@
 .FlavorText__text {
   position: relative;
   top: 0;
-  transition: top 100ms;
+  transition: top 200ms;
 }
 
 .FlavorText__text__flavor {
   position: relative;
   top: 0;
   opacity: 1;
-  transition: opacity 100ms, top 100ms;
+  transition: opacity 200ms, top 200ms;
 }
 
 .FlavorText__hover-text {
@@ -33,7 +33,7 @@
   left: 0;
   width: 100%;
   opacity: 0;
-  transition: opacity 100ms, top 100ms;
+  transition: opacity 200ms, top 200ms;
 }
 .FlavorText__hover-text__name { opacity: 0; }
 
@@ -55,4 +55,11 @@
       opacity: 1;
     }
   }
+}
+
+
+.SiteCopyright {
+  color: $colorMuted;
+  display: block;
+  margin: 4rem 0;
 }

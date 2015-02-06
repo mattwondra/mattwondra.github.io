@@ -1,7 +1,15 @@
+$mediaMedium: 30em;
+$mediaLarge: 40em;
 
-$colorMuted:  #aaa;
+
+$lightGray: #aaa;
+$lighterGray: #ddd;
+
+
+$colorMuted:  $lightGray;
 
 $colorBrand: #66e8ba;
+$colorBrandAlt: #2cc58f;
 
 $fontSizeSmallest:  1.2rem;
 $fontSizeSmall:     1.6rem;

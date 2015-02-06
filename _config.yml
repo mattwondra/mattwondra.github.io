@@ -5,7 +5,7 @@ author:       "Matt Wondra"
 
 defaultFlavorText: forgot to add flavor text to this page.
 
-permalink: /:year/:title/
+permalink: /blog/:year/:title/
 
 
 
@@ -15,6 +15,6 @@ sass:
   sass_dir: assets/_sass
 
 # Options for jekyll-rss plugin
-# rss_path:       "/"
-# rss_name:       "rss.xml"
-# rss_post_limit: 10
+rss_path:       "/"
+rss_name:       "rss.xml"
+rss_post_limit: 10

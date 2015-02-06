@@ -1,0 +1,5 @@
+{% for post in site.posts limit:include.limit %}
+  <div class="PostList__item">
+    {% include posts/PostTeaser.html post=post %}
+  </div>
+{% endfor %}

@@ -1,31 +1,27 @@
 ---
 layout: default
-mattwondra: is pleased to meet you.
+mattwondra: has a tube of content.
 ---
-{% if site.posts.length %}
-  <section class="page-section">
-    <h1 class="section-heading">Latest posts</h1>
-    <ul class="list-unstyled post-teaser-list">
-      {% for post in site.posts limit:3 %}
-        <li>
-          {% include posts/teaser.html %}
-        </li>
-      {% endfor %}
-    </ul>
-  </section>
+
+<p class="standout">
+  <strong>Hi, I'm Matt Wondra.</strong>
+  I’m a design-minded web geek living in Champaign,&nbsp;Illinois.
+</p>
+<a href="/about/">More about me&nbsp;&rarr;</a>
+
+<hr class="ContentBreak" />
+
+{% capture postCount %}{{site.posts.size}}{% endcapture %}
+{% if postCount != "0" %}
+  <h2 class="u-section-heading">Here's what I'm thinking about</h2>
+  {% include posts/PostList.html limit="3" %}
+  {% if postCount > "1" %}<a href="/blog/archive/">More in the archive&nbsp;&rarr;</a>{% endif %}
 {% endif %}
 
-<section class="page-section">
-  <h1 class="section-heading">Speaking soon</h1>
+<hr class="ContentBreak" />
 
-  <div class="page-content speaking-list">
-    <h2>Making a Big Impact with a Small Web Team</h2>
-    <p>
-      April 2, 2014 — Champaign, IL (live stream available)
-      <br />
-      <a href="http://illinois.edu/calendar/detail/4835?eventId=31732813&calMin=201303&cal=20140311&skinId=4897">Details</a>
-      &middot;
-      <a href="http://www.slideshare.net/mattwondra/making-a-big-impact-with-a-small-web-team">Slides</a>
-    </p>
-  </div>
-</section>
+<h2 class="u-section-heading">Projects I've worked on</h2>
+<div class="Teaser">
+  <a class="Teaser__title" href="https://github.com/mattwondra/console.loggins">console.loggins()</a>
+  <p class="Teaser__content">Tired of boring console logs? Have Kenny Loggins sing your debug messages back to you. A polyfill for the yet-unproposed standard. <a href="https://github.com/mattwondra/console.loggins">See the project&nbsp;&rarr;</a></p>
+</div>

@@ -1,6 +1,9 @@
 html {
   font-size: 50%;
-  @media (min-width: 40em) {
+  @media (min-width: $mediaMedium) {
+    font-size: 56.25%;
+  }
+  @media (min-width: $mediaLarge) {
     font-size: 62.5%;
   }
 }
@@ -12,29 +15,39 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-size: $fontSizeNormal;
-  font-weight: $fontWeightNormal;
+  font-size: inherit;
+  font-weight: inherit;
+  margin: 0;
+}
+
+p {
   margin: 0;
 }
 
 a {
   color: $colorBrand;
   text-decoration: none;
+  &:hover , &:focus {
+    color: $colorBrandAlt
+  }
+}
+
+strong, b {
+  font-weight: $fontWeightBold;
 }
 
 
-
 .Post__header {
-  margin-bottom: 7rem;
-  &:after {
-    content: '';
-    display: block;
-    width: 4rem;
-    height: 1px;
-    background: $colorMuted;
-    position:relative;
-    top: 2rem;
-  }
+  // margin-bottom: 7rem;
+  // &:after {
+  //   content: '';
+  //   display: block;
+  //   width: 4rem;
+  //   height: 1px;
+  //   background: $colorMuted;
+  //   position:relative;
+  //   top: 2rem;
+  // }
 }
 
 .Post__title {
@@ -49,7 +62,7 @@ a {
   font-size:$fontSizeSmall;
 }
 
-.Post__content {
+.u-typeset {
   p {
     margin: 0 0 1.25em;
   }
@@ -57,4 +70,70 @@ a {
 
 .standout {
   font-size: $fontSizeLarge;
+}
+
+
+.PostTeaser__title {
+  font-size: $fontSizeLarge;
+  font-weight: $fontWeightBold;
+  color: #333;
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+.PostTeaser__byline {
+  @include uppercase;
+  color: $colorMuted;
+  font-size:$fontSizeSmall;
+  white-space: nowrap;
+}
+
+
+.PostList__item {
+  margin-bottom: 5rem;
+}
+
+
+.Page__title {
+  @include largeHeading;
+  margin-bottom: 3rem;
+  color: #222;
+}
+
+.PrimaryNav {
+  margin-bottom: 0.5rem;
+  display: inline-block;
+}
+.PrimaryNav a {
+  margin-right: 1.5rem;
+}
+
+.SecondaryNav {
+  font-size: $fontSizeSmall;
+  margin-bottom: 0.5rem;
+  display: inline-block;
+}
+.SecondaryNav a {
+  margin-right: 1rem;
+}
+
+
+.Teaser__title {
+  font-size: $fontSizeLarge;
+  font-weight: $fontWeightBold;
+  color: #333;
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+
+.ContentBreak {
+  border: 0;
+  height: 1px;
+  background: $lighterGray;
+  margin: 6rem 0;
+  width: 3rem;
+}
+.ContentBreak--condensed {
+  margin: 3rem 0;
 }
