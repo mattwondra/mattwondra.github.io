@@ -1,14 +1,5 @@
 .u-responsive-wrapper {
-  max-width: 73rem;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-  margin-left: auto;
-  margin-right: auto;
-  
-  @media (min-width: $mediaMedium) {
-    padding-left: 3rem;
-    padding-right: 3rem;
-  }
+  @extend %responsive-wrapper;
 }
 
 .u-text-muted {
@@ -22,11 +13,36 @@
   }
 }
 
-.u-section-heading {
+%section-heading {
   @include uppercase;
   font-weight: $fontWeightBold;
   font-size: $fontSizeSmall;
   margin-bottom: 2rem;
+  color: $black;
+}
+.u-section-heading {
+  @extend %section-heading;
 }
 
 .u-page-section { margin-bottom: 6rem; }
+
+%padded-block {
+  // Most likely we want to color around margins of wrapped elements, so set overflow
+  // to make sure we do.
+  overflow: auto;
+  padding: 2.5em 0;
+  >:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.u-bg-gray {
+  @extend %padded-block;
+  background-color: $lightestGray;
+}
+
+.u-bg-brand {
+  @extend %padded-block;
+  background-color: $colorBrand;
+  color: #fff;
+}

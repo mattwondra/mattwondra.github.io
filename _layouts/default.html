@@ -16,62 +16,36 @@
 </head>
 <body>
 
-  <header role="banner" class="u-responsive-wrapper">
-    {% if page.url != "/index.html" %}
-      {% assign isLink = true %}
-    {% endif %}
-    
-    {% capture flavorText %}
-      <div class="FlavorText__text">
-        Matt Wondra
-        <span class="FlavorText__text__flavor">
-          {% if page.mattwondra %}{{ page.mattwondra }}{% else %}{{ site.defaultFlavorText }}{% endif %}
-        </span>
-        
-        {% if isLink %}
-          <div class="FlavorText__hover-text">
-            <span class="FlavorText__hover-text__name">Matt Wondra</span>
-            will guide you home.
-          </div>
-        {% endif %}
-      </div>
-    {% endcapture %}
-    
-    {% if isLink %}
-      <a href="/" class="FlavorText FlavorText--link">
-        {{ flavorText }}
-      </a>
-    {% else %}
-      <div class="FlavorText">
-        {{ flavorText }}
-      </div>
-    {% endif %}
+  <header role="banner">
+    <div class="u-responsive-wrapper">
+      <a href="/">Matt Wondra</a>
+      {% if page.mattwondra %}{{ page.mattwondra }}{% else %}{{ site.defaultFlavorText }}{% endif %}
+    </div>
   </header>
 
-  <main class="u-responsive-wrapper" role="main">
+  <main role="main">
     {{ content }}
   </main>
 
-  <footer role="contentinfo" class="SiteFooter u-responsive-wrapper">
-    <hr class="ContentBreak" />
-    
-    <h2 class="u-section-heading">Choose your own adventure</h2>
-    <nav class="PrimaryNav">
-      <a href="/">Home</a>
-      <a href="/about/">About</a>
-      <a href="/blog/archive/">Archive</a>
-    </nav>
-    <div class="SecondaryNav">
-      <a href="https://github.com/mattwondra" class="u-link-muted">Github</a>
-      <a href="https://twitter.com/mattwondra" class="u-link-muted">Twitter</a>
-      <a href="http://instagram.com/mattwondra" class="u-link-muted">Instagram</a>
-      <a href="{{site.rss_path}}{{site.rss_name}}" class="u-link-muted">RSS</a>
-    </div>
-    
-    
-    <small class="SiteCopyright">
-      &copy; {{ site.time | date: '%Y' }} Matt Wondra
-    </small>
+  <footer role="contentinfo" class="u-bg-gray">
+    <section class="u-responsive-wrapper">
+      <h2 class="u-section-heading">Choose your own adventure</h2>
+      <nav class="PrimaryNav">
+        <a href="/">Home</a>
+        <a href="/about/">About</a>
+        <a href="/speaking/">Speaking</a>
+      </nav>
+      <div class="SecondaryNav">
+        <a href="https://github.com/mattwondra" class="u-link-muted">Github</a>
+        <a href="https://twitter.com/mattwondra" class="u-link-muted">Twitter</a>
+        <a href="http://instagram.com/mattwondra" class="u-link-muted">Instagram</a>
+        <a href="{{site.rss_path}}{{site.rss_name}}" class="u-link-muted">RSS</a>
+      </div>
+      
+      <small class="SiteCopyright">
+        &copy; {{ site.time | date: '%Y' }} Matt Wondra
+      </small>
+    </section>
   </footer>
   
 

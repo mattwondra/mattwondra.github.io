@@ -1,18 +1,25 @@
 $mediaMedium: 30em;
 $mediaLarge: 40em;
 
-
-$lightGray: #aaa;
+$black: #382F2E;
+$darkGray: #514948;
+$mediumGray: #918988;
+$lightGray: #A9A3A2;
 $lighterGray: #ddd;
+$lightestGray: #f3f3f3;
 
 
+
+
+$colorText: $darkGray;
 $colorMuted:  $lightGray;
 
-$colorBrand: #66e8ba;
-$colorBrandAlt: #2cc58f;
+$colorBrand: #df2209;
+$colorBrandAlt: #9C1A00;
 
 $fontSizeSmallest:  1.2rem;
-$fontSizeSmall:     1.6rem;
+$fontSizeSmaller:   1.5rem;
+$fontSizeSmall:     1.75rem;
 $fontSizeNormal:    2.0rem;
 $fontSizeLarge:     2.5rem;
 $fontSizeLargest:   5.0rem;

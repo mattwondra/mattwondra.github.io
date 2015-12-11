@@ -1,0 +1,16 @@
+.Post__header {
+  @extend %responsive-wrapper;
+  margin: 0 auto 4rem;
+}
+
+.Post__title {
+  @include largeHeading;
+  color: $black;
+}
+
+.Post__byline {
+  @include uppercase;
+  color: $colorMuted;
+  font-size:$fontSizeSmall;
+  letter-spacing: 1px;
+}

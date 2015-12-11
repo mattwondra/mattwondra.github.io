@@ -90,15 +90,22 @@ GEM
       jekyll (>= 2.0)
     json (1.8.3)
     kramdown (1.5.0)
+    linkify-it-rb (1.1.1.0)
+      uc.micro-rb (~> 1.0)
     liquid (2.6.2)
     listen (2.10.1)
       celluloid (~> 0.16.0)
       rb-fsevent (>= 0.9.3)
       rb-inotify (>= 0.9)
     maruku (0.7.0)
+    mdurl-rb (1.0.0.3)
     mercenary (0.3.5)
     mini_portile (0.6.2)
     minitest (5.8.0)
+    motion-markdown-it (4.2.2.0)
+      linkify-it-rb (~> 1.0)
+      mdurl-rb (~> 1.0)
+      uc.micro-rb (~> 1.0)
     net-dns (0.8.0)
     nokogiri (1.6.6.2)
       mini_portile (~> 0.6.0)
@@ -126,6 +133,7 @@ GEM
       ethon (>= 0.7.4)
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
+    uc.micro-rb (1.0.0)
     yajl-ruby (1.2.1)
 
 PLATFORMS
@@ -133,6 +141,7 @@ PLATFORMS
 
 DEPENDENCIES
   github-pages
+  motion-markdown-it
 
 BUNDLED WITH
    1.10.6

@@ -1,0 +1,13 @@
+.Page__header {
+  @extend %responsive-wrapper;
+}
+
+.Page__title {
+  @include largeHeading;
+  margin-bottom: 3rem;
+  color: $black;
+}
+
+.Page__body {
+  margin-bottom: 6rem;
+}
