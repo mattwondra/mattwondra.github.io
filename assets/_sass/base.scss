@@ -1,5 +1,6 @@
 html {
   font-size: 50%;
+  background: #f3f3f3;
   @media (min-width: $mediaMedium) {
     font-size: 56.25%;
   }
@@ -12,6 +13,11 @@ body {
   font: #{$fontSizeNormal}/1.4 "interface", "Helvetica Neue", Arial, Helvetica, sans-serif;
   color: $colorText;
   font-weight: $fontWeightNormal;
+  background: #fff;
+  border-top: 2rem solid $colorBrand;
+  @media (min-width: $mediaMedium) {
+    padding-top: 3rem;
+  }
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -39,7 +45,7 @@ strong, b {
 
 
 .u-typeset {
-  p, blockquote, h2, h3 {
+  p, blockquote, h1, h2, h3 {
     @extend %responsive-wrapper;
     margin-bottom: 3rem;
   }
