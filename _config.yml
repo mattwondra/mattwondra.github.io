@@ -1,13 +1,18 @@
-name:         "Matt Wondra&rsquo;s Blog"
+name:         "Matt Wondra"
 url:          "http://mattwondra.com"
 description:  "Thoughts on web development, design process, and remote work by Matt Wondra."
 author:       "Matt Wondra"
 
-permalink: /:year/:month/:title/
+permalink: /blog/:year/:title/
+
+defaultFlavorText: "lives in a rounded rectangle."
+
+highlighter: pygments
 markdown: redcarpet
-pygments: true
+sass:
+  sass_dir: assets/_sass
 
 # Options for jekyll-rss plugin
-# rss_path:       "/"
-# rss_name:       "rss.xml"
-# rss_post_limit: 10
+rss_path:       "/"
+rss_name:       "rss.xml"
+rss_post_limit: 10

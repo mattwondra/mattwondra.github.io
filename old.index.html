@@ -1,0 +1,28 @@
+---
+layout: default
+---
+
+<section class="Column">
+  <h1 class="Page__title">Hi, I’m Matt.</h1>
+  <p class="standout">
+    I’m a design-minded web geek living in Champaign,&nbsp;Illinois.
+  </p>
+  <a href="/about/">More about me&nbsp;&rarr;</a>
+</section>
+
+{% capture postCount %}{{site.posts.size}}{% endcapture %}
+{% if postCount != "0" %}
+  <section class="Column">
+    <h2 class="u-section-heading">What I'm thinking about</h2>
+    {% include posts/PostList.html limit="3" %}
+    {% if postCount > "1" %}<a href="/blog/archive/">More in the archive&nbsp;&rarr;</a>{% endif %}
+  </section>
+{% endif %}
+
+<section class="Column">
+  <h2 class="u-section-heading">Pet projects</h2>
+  <div class="Teaser">
+    <a class="Teaser__title" href="https://github.com/mattwondra/console.loggins">console.loggins()</a>
+    <p class="Teaser__content">Tired of boring console logs? Have Kenny Loggins sing your debug messages back to you. A polyfill for the yet-unproposed standard. <a href="https://github.com/mattwondra/console.loggins">See the project&nbsp;&rarr;</a></p>
+  </div>
+</section>

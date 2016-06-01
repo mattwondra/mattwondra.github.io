@@ -1,0 +1,11 @@
+<div class="PostTeaser">
+  <div class="PostTeaser__header">
+    <a class="PostTeaser__title" href="{{include.post.url}}">
+      {{include.post.title}}
+    </a>
+    <span class="PostTeaser__byline">{{ include.post.date | date: "%B %-d, %Y" }}</span>
+  </div>
+  <p class="PostTeaser__content">
+    {{ include.post.content | strip_html | truncatewords:25}} <a href="{{include.post.url}}">More&nbsp;&rarr;</a>
+  </p>
+</div>

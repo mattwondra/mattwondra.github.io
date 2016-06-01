@@ -1,0 +1,30 @@
+[role="banner"] {
+  background: $lightestGray;
+  color: $mediumGray;
+  
+  font-size: $fontSizeSmall;
+  line-height: 1.33;
+  padding: 1.5rem 0;
+  
+  margin-bottom: 8rem;
+  a {
+    @include uppercase;
+    font-weight: $fontWeightBold;
+  }
+}
+
+[role="contentinfo"] {
+  margin-top: 6rem;
+}
+
+.SiteCopyright {
+  color: $colorMuted;
+  display: block;
+  margin: 4rem 0;
+}
+
+.Column {
+  @extend %responsive-wrapper;
+  margin: 6rem auto 10rem;
+}
+

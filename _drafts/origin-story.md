@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Origin story"
-status: ""
+title:  Origin story
+mattwondra: 
 ---
 
 I never wanted to build websites. I wanted to make video games. We all did.

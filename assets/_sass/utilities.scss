@@ -1,0 +1,48 @@
+.u-responsive-wrapper {
+  @extend %responsive-wrapper;
+}
+
+.u-text-muted {
+  color: $colorMuted;
+}
+
+.u-link-muted {
+  color: $colorMuted;
+  &:hover, &:focus {
+    color: $colorBrandAlt;
+  }
+}
+
+%section-heading {
+  @include uppercase;
+  font-weight: $fontWeightBold;
+  font-size: $fontSizeSmall;
+  margin-bottom: 2rem;
+  color: $black;
+}
+.u-section-heading {
+  @extend %section-heading;
+}
+
+.u-page-section { margin-bottom: 6rem; }
+
+%padded-block {
+  // Most likely we want to color around margins of wrapped elements, so set overflow
+  // to make sure we do.
+  overflow: auto;
+  padding: 2.5em 0;
+  >:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.u-bg-gray {
+  @extend %padded-block;
+  background-color: $lightestGray;
+}
+
+.u-bg-brand {
+  @extend %padded-block;
+  background-color: $colorBrand;
+  color: #fff;
+}
