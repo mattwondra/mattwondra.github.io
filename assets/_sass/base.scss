@@ -73,6 +73,10 @@ strong, b {
   margin-right: 1rem;
 }
 
+.PostTeaser__header {
+  @extend %responsive-wrapper;
+}
+
 .PostTeaser__byline {
   @include uppercase;
   color: $colorMuted;
